@@ -165,12 +165,12 @@ tourSchema.pre(/^find/, function (next) {
   next();
 });
 
-tourSchema.post(/^find/, function (docs, next) {
-  console.log(`Query took ${Date.now() - this.start} MS `);
+// tourSchema.post(/^find/, function (docs, next) {
+//   console.log(`Query took ${Date.now() - this.start} MS `);
 
-  // console.log(docs);
-  next();
-});
+//   // console.log(docs);
+//   next();
+// });
 
 // Aggregation middleware
 

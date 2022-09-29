@@ -59,20 +59,6 @@ if (userPasswordForm)
     document.getElementById("password-confirm").value = "";
   });
 
-// if (bookbtn)
-//   bookbtn.addEventListener("click", (e) => {
-//     e.target.innerHTML = "Processing...";
-//     const { tourId } = e.target.dataset;
-//     bookTour(tourId);
-//   });
-// if (bookBtn)
-//   bookBtn.addEventListener("click", (e) => {
-//     e.target.textContent = "Processing...";
-//     const { tourId } = e.target.dataset;
-//     console.log("index ", { tourId });
-//     bookTour(tourId);
-//   });
-
 if (bookBtn)
   bookBtn.addEventListener("click", (e) => {
     e.target.textContent = "Processing...";

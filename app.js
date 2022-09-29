@@ -9,6 +9,7 @@ const morgan = require("morgan");
 const mongoSanitize = require("express-mongo-sanitize");
 const xss = require("xss-clean");
 const hpp = require("hpp");
+const compression = require("compression");
 const cookieParser = require("cookie-parser");
 
 const tourRouter = require("./routes/tourRoutes");
@@ -112,6 +113,8 @@ app.use(
     ],
   })
 );
+
+app.use(compression());
 
 // app.use((req, res, next) => {
 //   console.log("Hello form the Middleware 👋");
