@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const viewController = require("./../controllers/viewControllers"),
-  getMyTours = require("./../controllers/getMyTours");
-const authController = require("./../controllers/authControllers");
-const bookingController = require("./../controllers/bookingControllers");
+const viewController = require("../controllers/viewControllers"),
+  getMyTours = require("../controllers/getMyTours");
+const authController = require("../controllers/authControllers");
+const bookingController = require("../controllers/bookingControllers");
 
 router.get(
   "/",
